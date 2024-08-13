@@ -1,13 +1,12 @@
 from capitalize import capitalize
 
 
-if capitalize('hello') != 'Hello':
-    raise Exception('Функция работает неверно.')
+assert capitalize('hello') == 'Hello'
 
-if capitalize('') != '':
-    raise Exception('Функция работает неверно.')
+assert capitalize('') == ''
 
-if capitalize(None) != None:
-    raise Exception('Функция работает неверно.')
+assert capitalize(None) == None
+
+assert capitalize(1) == 1
 
 print('Все тесты пройдены')
